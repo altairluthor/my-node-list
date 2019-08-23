@@ -1,0 +1,49 @@
+.detail-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-editbar-wapper {
+  height: calc(100% - 140px);
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.detail-editbar {
+  font-size: 20px;
+  padding: 25px;
+  height: 100%!important;
+}
+
+.detail-foot {
+  height: 50px;
+  width: 95%;
+  background: rgb(255, 100, 40);
+  color: white;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.detail-totalnumber {
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  font-size: 16px;
+}
+
+.detail-return-button {
+  position: absolute;
+  left: 50px;
+  top: 12px;
+  font-size: 35px;
+  color: rgb(252, 209, 17);
+}
+
+.detail-readbar {
+  font-size: 20px;
+  word-break: break-all;
+  padding: 25px;
+}
