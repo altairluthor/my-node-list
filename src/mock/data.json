@@ -1,22 +1,16 @@
 {
   "nodeList": [
     {
-      "title": "afdsdfs",
-      "content": "afdsdfs",
-      "id": 1566123147040,
-      "date": "2019-08-18"
+      "title": "JavaScript 闭包",
+      "content": "JavaScript 闭包\nhttps://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures\nhttps://www.jianshu.com/p/dee9f8b14771\n\n构造函数：\n定义了的一个函数对象同时也是一个构造函数，通过调用构造函数可以得到一个函数对象的实例\n该实例中包含了一个构造函数属性（constructor）指向该构造函数\n\n原型链：\n定义一个对象时（并非实例化该对象），如果是函数对象则会默认包含一个prototype对象属性\n函数对象的prototype属性包含了一个构造函数属性（constructor）=== 该构造函数（函数对象）\n一个对象的__prote__属性 === 该对象的构造函数（函数对象）的prototype对象属性\n两个例外：\n函数对象的构造函数对象Function的prototype是一个函数对象而非普通对象，且该函数对象的__prote__属性与一般函数对象不同，不是Function的prototype而是Object的prototype\nObject函数对象的prototype是一个普通对象，但其__prote__属性不是Object（普通对象的构造函数）的prototype而是null\n\n总结：\n通过原型链对象的实例可以直接使用其构造函数中的属性\n具体来说就是通过一个对象实例来调用某个属性时，js将以实例本身=>实例的__proto__属性即实例构造函数的prototype属性=>实例的构造函数的prototype属性的__proto__属性=>...=>Object.prototype.__proto__即null的顺序查找，在以上任意位置查找到即可通过该实例来调用该属性。",
+      "id": 1566663268827,
+      "date": "2019-08-25 00:14:28"
     },
     {
-      "title": "ksdkljfklsdj",
-      "content": "ksdkljfklsdj\n d\nsd\nd\nb sad",
-      "id": 1566123160429,
-      "date": "2019-08-18"
-    },
-    {
-      "title": "jkjdkjkshttp://dskfjkkdsjlkfj",
-      "content": "jkjdkjkshttp://dskfjkkdsjlkfj\nfvdsvd ",
-      "id": 1566123186334,
-      "date": "2019-08-18"
+      "title": "todo：增加删除与修改功能",
+      "content": "todo3：增加删除与修改功能",
+      "id": 1566663929324,
+      "date": "2019-08-25 00:25:29"
     }
   ]
 }

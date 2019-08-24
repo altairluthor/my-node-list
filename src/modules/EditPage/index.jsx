@@ -32,15 +32,15 @@ class EditPage extends Component {
     const { data } = this.state
     const { addData } = this.props
     console.log(data)
-    if (data.length <= 0 || data.length > 250) {
-      message.error('字数应在1~250之间')
+    if (data.length <= 0 || data.length > 2000) {
+      message.error('字数应在1~2000之间')
       return
     }
     const formatData = {
       title: (data || '').split(/[\r\n]/g)[0], // 截取首行作为title
       content: data,
       id: moment().valueOf(),
-      date: moment().format('YYYY-MM-DD')
+      date: moment().format('YYYY-MM-DD HH:mm:ss')
     }
     addData(formatData).then(res => {
       this.props.history.push('/')

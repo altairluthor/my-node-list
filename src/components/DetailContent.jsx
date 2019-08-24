@@ -7,7 +7,7 @@ const { TextArea } = Input
 class DetailContent extends Component {
   constructor(props) {
     super(props)
-    this.maxValue = 250
+    this.maxValue = 2000
   }
   static propTypes = {
     titleText: PropTypes.string,
@@ -24,7 +24,7 @@ class DetailContent extends Component {
   }
   render() {
     const { data, titleText, buttonText, handleButtonClick, handleReturnClick, type } = this.props
-    const formatData = (data || '').replace(/((http|https):\/\/)+.+(\s|$)/, '<a href=$& target="_blank">$&</a>')
+    const formatData = (data || '').replace(/(((http|https):\/\/).+)(?=(\s|$))/g, '<a href=$& target="_blank">$&</a>').replace(/\n/g, '<br />')
     return (<div className='detail-content'>
       <Icon type='left' className='detail-return-button' onClick={handleReturnClick} />
       <h2 className='page-title'>{titleText}</h2>

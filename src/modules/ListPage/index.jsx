@@ -18,7 +18,7 @@ class ListPage extends Component {
   }
   render() {
     const { data, setDetailData } = this.props
-    data.sort((a, b) => { return moment(a.date).isBefore(b.date) ? 1 : -1 })
+    data.sort((a, b) => { return moment(a.id).isBefore(b.id) ? 1 : -1 })
     return (<ListPageContent
       data={data}
       handleEdit={() => this.props.history.push('/edit')}
