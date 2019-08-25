@@ -31,7 +31,6 @@ class EditPage extends Component {
   handleButtonClick = () => {
     const { data } = this.state
     const { addData } = this.props
-    console.log(data)
     if (data.length <= 0 || data.length > 2000) {
       message.error('字数应在1~2000之间')
       return
